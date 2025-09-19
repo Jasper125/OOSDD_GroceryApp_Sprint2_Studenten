@@ -7,7 +7,6 @@ using Grocery.Core.Models;
 using Grocery.Core.Services;
 using System.Collections.ObjectModel;
 using System.Linq;
-using Windows.Foundation;
 
 namespace Grocery.App.ViewModels
 {
