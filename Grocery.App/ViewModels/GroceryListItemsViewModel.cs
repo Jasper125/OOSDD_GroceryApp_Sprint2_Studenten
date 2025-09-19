@@ -92,7 +92,7 @@ namespace Grocery.App.ViewModels
             _productService.Update(product);
             //Werk de lijst AvailableProducts bij, want dit product is niet meer beschikbaar
             GetAvailableProducts();
-            //call OnGroceryListChanged(GroceryList);
+            //call OnGroceryListChanged(GroceryList); 
             OnGroceryListChanged(groceryList);
         }
     }
