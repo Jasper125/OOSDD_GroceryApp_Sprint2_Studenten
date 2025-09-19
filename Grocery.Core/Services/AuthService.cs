@@ -14,9 +14,16 @@ namespace Grocery.Core.Services
         public Client? Login(string email, string password)
         {
             //Vraag de klantgegevens [Client] op die je zoekt met het opgegeven emailadres
+            var client = _clientService.Get(email);
+            if (client == null) { return null; }
             //Als je een klant gevonden hebt controleer dan of het password matcht --> PasswordHelper.VerifyPassword(password, passwordFromClient)
+            bool isValid = PasswordHelper.VerifyPassword(password, client.GetPasswordHash());
+            if (isValid) 
+                return client; 
+            else 
+                return null;
             //Als alles klopt dan klantgegveens teruggeven, anders null
-            return null;
+                
         }
     }
 }
