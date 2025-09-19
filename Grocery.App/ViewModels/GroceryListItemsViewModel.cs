@@ -7,7 +7,6 @@ using Grocery.Core.Models;
 using Grocery.Core.Services;
 using System.Collections.ObjectModel;
 using System.Linq;
-using Windows.Foundation;
 
 namespace Grocery.App.ViewModels
 {
@@ -93,7 +92,7 @@ namespace Grocery.App.ViewModels
             _productService.Update(product);
             //Werk de lijst AvailableProducts bij, want dit product is niet meer beschikbaar
             GetAvailableProducts();
-            //call OnGroceryListChanged(GroceryList);
+            //call OnGroceryListChanged(GroceryList); 
             OnGroceryListChanged(groceryList);
         }
     }
