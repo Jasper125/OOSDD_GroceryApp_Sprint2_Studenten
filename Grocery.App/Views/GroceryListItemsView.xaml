@@ -8,7 +8,7 @@
              Title="GroceryListItemsView">
 
     <ContentPage.ToolbarItems>
-        <ToolbarItem Text="Wijzig kleur" Command="{Binding ChangeColorCommand}" IconImageSource="{FontImage Glyph='&#xf30c;', Color=Black, Size=22}" />
+        <ToolbarItem Text="Kleur bewaren" Command="{Binding ChangeColorCommand}" IconImageSource="{FontImage Glyph='&#xf30c;', Color=Black, Size=22}" />
     </ContentPage.ToolbarItems>
     
     <Shell.TitleView>
